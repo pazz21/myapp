@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DataPhi</title>
+	<link href='css/dataphi.css' rel='stylesheet'>
+	<link href='css/toastr.min.css' rel='stylesheet'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+	
+	</script>
+	<script src="build/toastr.min.js">
+	</script>
+	<script src="js/glimpse.js">
+	</script>
+	<script src="js/glimpse.toastr.js">
+	</script>
+	<script src="js/dataphi1.js">
+	</script>
+</head>
+<body>
+	<div class="header-cont" style='z-index: 1'>
+		<div class="header">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">DataPhi Labs</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Fill Form</a>
+						</li>
+					</ul>
+					<div class="nav navbar-nav navbar-right" style="margin-left: 2em">
+						<button class="btn btn-danger navbar-btn">All Patients</button>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="form-style-5">
+		<form class="form-horizontal" id="myForm" name='registration' >
+			<h2>Patient Data Form</h2>
+			<fieldset>
+				<legend><span class="number">1</span> Patient Info</legend>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="firstName">First Name</label>
+					<div class="col-sm-9">
+						<input id='firstname' aria-required="true" autofocus="" class="form-control" name="firstname" pattern="^([- \w\d\u00c0-\u024f]+)$" placeholder="First Name" required="required" type="text">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="lastname">Last Name</label>
+					<div class="col-sm-9">
+						<input id='lastname' autofocus="" class="form-control" name="lastname" placeholder="Last Name" required type="text">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="age">Age</label>
+					<div class="col-sm-9">
+						<input id='age' class="form-control" name="age" placeholder="age" required type="number">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="phone">Phone number</label>
+					<div class="col-sm-9">
+						<input class="form-control" id="phone" name="phone"  placeholder="phone" required type="number">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label" for="birthDate">Date of Birth</label>
+					<div class="col-sm-9">
+						<input id='date' class="form-control" name="birthdate" placeholder="dd-mm-yyyy" required type="date">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-3">Gender</label>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-9">
+								<select id='gender' name="gender" required>
+									<option value="Female">
+										Female
+									</option>
+									<option value="Male">
+										Male
+									</option>
+									<option selected value="Decline">
+										Decline to state
+									</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</fieldset><legend><span class="number">2</span> Additional Info</legend> 
+			<textarea id='text' required name="text" placeholder="Description"></textarea> <!-- /.form-group -->
+			<br>
+			<div class="form-group">
+				<div class="col-sm-9 col-sm-offset-3">
+					<button class="btn btn-primary btn-block" id="submitdata" type='submit' >Register</button>
+				</div>
+			</div>
+		</form><!-- /form -->
+	</div><!-- ./container -->
+	
+</body>
+</html>
